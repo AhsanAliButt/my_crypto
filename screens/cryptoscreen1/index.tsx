@@ -170,12 +170,12 @@ const CryptoScreen1 = () => {
         <div className="flex flex-col items-start justify-start pt-[7px] px-0 pb-0 box-border max-w-full">
           <div className="self-stretch box-border flex flex-row items-start justify-start pt-[15px] px-4 pb-3 max-w-full border-[1px] border-solid border-darkslategray-100 overflow-y-auto">
             <div className="flex-1 flex flex-row flex-wrap items-start justify-start gap-[36px] max-w-full z-[1]">
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-3 gap-1">
                 {coinData.map((item, index) => (
                   <>
                     <div className="flex flex-col items-start justify-start w-32">
                       <div className="flex flex-row items-start justify-start gap-[0px_3.1px]">
-                        <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
+                        <div className="flex flex-col items-start justify-start pt-[2px] px-0 pb-0">
                           <img
                             className="relative overflow-hidden shrink-0"
                             loading="lazy"
