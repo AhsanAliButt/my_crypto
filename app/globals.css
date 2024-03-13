@@ -40,6 +40,7 @@
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
+    --tv-color-pane-background: #000000;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -75,4 +76,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+@layer base {
+  :root(.theme-dark) {
+    --tv-color-pane-background: #000000;
+  }
+}
+:root(.theme-dark) {
+  --tv-color-pane-background: #000000;
 }
