@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, memo } from "react";
 import "./styles.css";
+// https://www.tradingview.com/charting-library-docs/latest/customization/styles/CSS-Color-Themes
 const TradingView = ({ token = "BITSTAMP:ETHUSD" }) => {
   const container = useRef();
 
