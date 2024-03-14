@@ -177,7 +177,7 @@ const CryptoScreen2 = () => {
         />
       </div>
       <section className="w-[425px] flex flex-row items-start justify-center max-w-full text-left text-[14px] text-white space-x-2">
-        <div className="flex items-center justify-between w-[400px] border-b-[1px] border-green-50 border-opacity-90 pb-4">
+        <div className="flex items-center justify-between w-[400px] border-b-[1px] border-gray border-opacity-50 pb-4">
           <div className="flex">
             <img
               className="relative overflow-hidden shrink-0 mr-1"
