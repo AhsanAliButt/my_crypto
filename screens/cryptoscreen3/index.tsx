@@ -1,18 +1,18 @@
 "use client";
 import React, { useEffect, useRef, memo } from "react";
 import "./styles.css";
-// https://www.tradingview.com/charting-library-docs/latest/customization/styles/CSS-Color-Themes
-const TradingView = ({ token = "BITSTAMP:ETHUSD" }) => {
-  const container = useRef();
+
+const TradingView = ({ token = "BITSTAMP:ETHUSD" }: { token?: string }) => {
+  const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (container.current.childNodes.length === 0) {
+    if (container.current && container.current.childNodes.length === 0) {
       const script = document.createElement("script");
       script.src =
         "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
       script.type = "text/javascript";
       script.async = true;
-      // setCSSCustomProperty("--tv-color-pane-background: #000000;");
+
       script.innerHTML = `
           {
             "width": "555",
